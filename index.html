@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#193b30">
+  <meta name="description" content="Discover the story, craft and cultural heritage behind Dhokra handicrafts with DhokraCraft Pro.">
+  <title>DhokraCraft Pro — Digital Heritage Passport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+  <a class="brand-logo" href="index.html" aria-label="Bastar Kala home">
+  <span class="brand-name">Bastar Kalā</span>
+  <span class="brand-tagline">TRIBAL ART OF CHHATTISGARH</span>
+</a>
+<span class="location-tag">BASTAR · CHHATTISGARH, INDIA</span>
+  </header>
+
+  <main id="top">
+
+    <section class="intro">
+      <p class="eyebrow">A LIVING CRAFT. A HUMAN STORY.</p>
+      <h1>Every craft carries<br><em>a piece of history.</em></h1>
+      <p class="intro-copy">
+        Discover the object. Meet the maker. Explore the heritage.
+      </p>
+    </section>
+
+    <section class="passport-section" aria-label="Interactive heritage card">
+      <div class="card-stage">
+        <div class="flip-card" id="flipCard" tabindex="0"
+             role="button" aria-label="Interactive heritage card. Tap to flip.">
+
+          <div class="flip-card-inner" id="flipCardInner">
+
+            <div class="flip-face flip-front">
+              <img src="images/heritage-front.png"
+                   alt="DhokraCraft Pro Digital Heritage Passport, featuring a Dhokra horse">
+              <span class="face-label">FRONT · HERITAGE</span>
+            </div>
+
+            <div class="flip-face flip-back">
+              <img src="images/heritage-back.png"
+                   alt="DhokraCraft Pro artisan heritage profile">
+              <span class="face-label">BACK · ARTISAN</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card-controls">
+        <button class="flip-button" id="flipButton" type="button">
+          <span class="flip-icon" aria-hidden="true">⟳</span>
+          <span id="flipLabel">Meet the Artisan</span>
+        </button>
+        <p class="interaction-hint">
+          DRAG TO EXPLORE · TAP TO FLIP
+        </p>
+      </div>
+    </section>
+    
+<section class="artisan-audio" id="artisan-story">
+  <p class="audio-eyebrow">LISTEN · LEARN · PRESERVE</p>
+
+  <h2>Every craft has a voice.</h2>
+
+  <p class="audio-intro">
+    Discover the tradition of Bastar Dhokra through a short
+    demonstration narration.
+  </p>
+
+  <div class="audio-player">
+    <div class="audio-icon">♫</div>
+
+    <div class="audio-details">
+      <h3>The Story Behind Dhokra</h3>
+      <p>Demo narration · English</p>
+    </div>
+
+    <audio controls preload="metadata">
+      <source src="audio/artisan-story.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+
+    <p class="audio-disclaimer">
+      Demonstration narration — not a recorded artisan interview.
+    </p>
+  </div>
+</section>
+
+<section class="craft-journey" id="craft-journey">
+  <div class="journey-heading">
+    <p class="journey-eyebrow">THE ART OF DHOKRA</p>
+    <h2>From earth to <em>heirloom.</em></h2>
+    <p>
+      Explore the traditional lost-wax casting process,
+      one stage at a time.
+    </p>
+  </div>
+
+  <div class="journey-card">
+    <div class="journey-topline">
+      <span id="journey-count">01 / 05</span>
+      <span>THE CRAFT JOURNEY</span>
+    </div>
+
+    <div class="journey-progress">
+      <div id="journey-progress-fill"></div>
+    </div>
+
+    <div class="journey-visual">
+      <img id="journey-image"
+           src="images/process-model.jpg"
+           alt="Artisan creating a wax model"
+           onerror="this.hidden=true; document.getElementById('journey-placeholder').hidden=false;">
+
+      <div id="journey-placeholder" hidden>
+        <span id="journey-placeholder-number">01</span>
+        <p>Add a photograph of this stage</p>
+      </div>
+    </div>
+
+    <div class="journey-content">
+      <p class="journey-stage-label" id="journey-label">
+        STAGE 01
+      </p>
+
+      <h3 id="journey-title">Shaping the model</h3>
+
+      <p id="journey-description">
+        The artisan creates a model of the desired object
+        using wax and carefully shapes its details.
+      </p>
+
+      <div class="journey-controls">
+        <button id="journey-prev" type="button" disabled>
+          ← Previous
+        </button>
+
+        <button id="journey-next" type="button">
+          Next stage →
+        </button>
+      </div>
+
+      <p class="journey-hint">Explore the five stages of the craft</p>
+    </div>
+  </div>
+
+  <p class="journey-note">
+    Demonstration of the traditional process. Methods and materials
+    can vary between artisans and workshops.
+  </p>
+</section>
+
+
+<!-- TRANSPARENT HERITAGE RECORD -->
+<section class="heritage-record" id="heritage-record">
+  <div class="record-heading">
+    <p class="record-eyebrow">OPEN RECORD · CLEAR SOURCES · TRUST</p>
+    <h2>Know the story behind the artifact.</h2>
+    <p>
+      Explore the information sources, verification status and
+      update history behind this digital heritage record.
+    </p>
+  </div>
+
+  <div class="record-card">
+    <div class="record-top">
+      <div>
+        <p class="record-label">DIGITAL HERITAGE PASSPORT</p>
+        <h3>The Bastar Heritage Horse</h3>
+        <p class="record-id">Artifact ID: DHP-BASTAR-001</p>
+      </div>
+      <span class="record-status">DEMO RECORD</span>
+    </div>
+
+    <div class="record-divider"></div>
+
+    <div class="record-grid">
+      <article class="record-item">
+        <span class="record-icon">⌁</span>
+        <h4>Artifact details</h4>
+        <p><strong>Craft:</strong> Dhokra metal casting</p>
+        <p><strong>Tradition:</strong> Lost-wax technique</p>
+        <p><strong>Region:</strong> Bastar, Chhattisgarh, India</p>
+      </article>
+
+      <article class="record-item">
+        <span class="record-icon">◎</span>
+        <h4>Verification status</h4>
+        <span class="verification-badge">Not independently verified</span>
+        <p>
+          The information shown is illustrative. Artifact origin,
+          maker details and authenticity have not been independently
+          confirmed.
+        </p>
+      </article>
+    </div>
+
+    <div class="record-divider"></div>
+
+    <div class="record-section">
+      <h4>Information sources</h4>
+      <p class="record-muted">
+        Each claim should have a source that visitors can inspect.
+      </p>
+
+      <ul class="source-list">
+        <li>
+          <span class="source-dot"></span>
+          <div>
+            <strong>Project demonstration description</strong>
+            <p>Used for the sample artifact name and ID.</p>
+            <span class="source-tag">DEMO DATA</span>
+          </div>
+        </li>
+
+        <li>
+          <span class="source-dot"></span>
+          <div>
+            <strong>Traditional craft process</strong>
+            <p>
+              General process information; a specific source
+              still needs to be added and checked.
+            </p>
+            <span class="source-tag">SOURCE PENDING</span>
+          </div>
+        </li>
+
+        <li>
+          <span class="source-dot"></span>
+          <div>
+            <strong>Artisan identity and origin</strong>
+            <p>
+              Confirmation from the artisan and supporting evidence
+              have not yet been collected.
+            </p>
+            <span class="source-tag">CONFIRMATION PENDING</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="record-divider"></div>
+
+    <div class="record-section">
+      <h4>Record-update history</h4>
+      <p class="record-muted">
+        A demonstration timeline of changes to this record.
+      </p>
+
+      <div class="record-timeline">
+        <div class="timeline-entry">
+          <span class="timeline-point"></span>
+          <div>
+            <div class="timeline-meta">
+              <strong>Version 1.0</strong>
+              <span>21 Oct 2026</span>
+            </div>
+            <p>Initial demonstration record created.</p>
+            <span class="source-tag">DEMO ENTRY</span>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="timeline-point pending"></span>
+          <div>
+            <div class="timeline-meta">
+              <strong>Next planned update</strong>
+              <span>Not yet dated</span>
+            </div>
+            <p>
+              Add artisan-approved details, supporting sources
+              and verification evidence when available.
+            </p>
+            <span class="source-tag">PENDING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="record-toggle" id="record-toggle"
+      type="button" aria-expanded="false"
+      aria-controls="record-notice">
+      How this record works <span>＋</span>
+    </button>
+
+    <div class="record-notice" id="record-notice" hidden>
+      <p>
+        The artifact ID identifies this digital record; it does
+        not by itself prove that an artifact is genuine.
+      </p>
+      <p>
+        Verification status should change only when supporting
+        evidence has been reviewed. Record updates should be
+        documented rather than silently overwritten.
+      </p>
+    </div>
+
+    <p class="record-footnote">
+      Prototype demonstration · Not an official certification
+      or independent authenticity assessment.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- PASTE THE NEW SUPPORT THE ARTISAN HTML HERE -->
+<section class="support-artisan" id="support-artisan">
+  ...
+</section>
+<!-- YOUR EXISTING FOOTER, IF ANY, STAYS BELOW -->
+
+
+    <section class="story-section" id="story">
+      <div class="section-heading">
+        <p class="eyebrow">BEYOND THE OBJECT</p>
+        <h2>Made by hand.<br><em>Carried through generations.</em></h2>
+        <p>
+          Dhokra is a traditional metal-casting craft practised in
+          different parts of India, including the Bastar region of
+          Chhattisgarh. Every artisan's story is unique.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-item">
+          <span class="story-number">01 / THE MAKER</span>
+          <h3>A person behind every piece</h3>
+          <p>
+            Artisans carry knowledge of form, detail and technique.
+            Their own experiences and stories deserve to be heard
+            in their own words.
+          </p>
+        </article>
+
+        <article class="story-item">
+          <span class="story-number">02 / THE MATERIAL</span>
+          <h3>Metal shaped with care</h3>
+          <p>
+            Dhokra traditionally uses non-ferrous metals and alloys.
+            The exact composition of this demonstration horse has
+            not been independently confirmed.
+          </p>
+        </article>
+
+        <article class="story-item">
+          <span class="story-number">03 / THE PROCESS</span>
+          <h3>The lost-wax tradition</h3>
+          <p>
+            In lost-wax casting, a model is used to create a mould.
+            The wax is removed and molten metal fills the space,
+            producing a form that can be finished by hand.
+          </p>
+        </article>
+
+        <article class="story-item">
+          <span class="story-number">04 / THE LEGACY</span>
+          <h3>Keeping heritage visible</h3>
+          <p>
+            DhokraCraft Pro connects a physical handicraft with
+            a digital record, helping visitors discover craft
+            information and the people who make it.
+          </p>
+        </article>
+      </div>
+
+      <div class="demo-note">
+        <span class="note-mark">i</span>
+        <p>
+          <strong>About this prototype</strong><br>
+          The displayed artisan profile and artifact record are
+          illustrative demo content, not official certification.
+          Replace them with artisan-approved information and
+          verified product details before public use. A QR code
+          links to a record but does not independently prove authenticity.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  
+<footer>
+  <a class="brand-logo footer-brand" href="#top" aria-label="Bastar Kala home">
+    <span class="brand-name">Bastar Kalā</span>
+    <span class="brand-tagline">TRIBAL ART OF CHHATTISGARH</span>
+  </a>
+
+  <p>Digital storytelling for traditional craftsmanship.</p>
+  <a class="back-top" href="#top">Back to top ↑</a>
+</footer>
+
+
+  
+<!-- DHOKRA MITRA: HERITAGE ASSISTANT -->
+<div class="mitra-widget" id="mitra-widget">
+  <section class="mitra-panel" id="mitra-panel" hidden>
+    <header class="mitra-header">
+      <div>
+        <h3>Dhokra Mitra</h3>
+        <p>Your Heritage Assistant · Demo</p>
+      </div>
+      <button type="button" id="mitra-close" aria-label="Close assistant">×</button>
+    </header>
+
+    <div class="mitra-messages" id="mitra-messages"
+         aria-live="polite">
+      <div class="mitra-message bot">
+        Namaste! 🙏 I'm Dhokra Mitra. Ask me about Dhokra craft,
+        the Heritage Passport, the craft process, or artisan support.
+      </div>
+    </div>
+
+    
+<div class="mitra-faqs">
+  <p class="mitra-faq-title">EXPLORE FAQs</p>
+
+  <details class="mitra-faq-group">
+    <summary>👩‍🎨 About the Artisan</summary>
+    <div class="mitra-faq-questions">
+      <button type="button" data-question="Who makes Dhokra products?">
+        Who makes Dhokra products?
+      </button>
+      <button type="button" data-question="What skills do Dhokra artisans use?">
+        What skills do artisans use?
+      </button>
+      <button type="button" data-question="Where is this artisan from?">
+        Where is the artisan from?
+      </button>
+      <button type="button" data-question="How can I contact the artisan?">
+        How can I contact the artisan?
+      </button>
+    </div>
+  </details>
+
+  <details class="mitra-faq-group">
+    <summary>🏺 About the Product</summary>
+    <div class="mitra-faq-questions">
+      <button type="button" data-question="What is this Dhokra product made of?">
+        What is it made of?
+      </button>
+      <button type="button" data-question="How is this product made?">
+        How is it made?
+      </button>
+      <button type="button" data-question="Is this product authentic?">
+        Is this product authentic?
+      </button>
+      <button type="button" data-question="How do I care for my Dhokra product?">
+        How do I care for it?
+      </button>
+      <button type="button" data-question="What is the artifact ID?">
+        What is the artifact ID?
+      </button>
+    </div>
+  </details>
+
+  <details class="mitra-faq-group">
+    <summary>🤝 Buying & Supporting</summary>
+    <div class="mitra-faq-questions">
+      <button type="button" data-question="How can I buy this product?">
+        How can I buy this product?
+      </button>
+      <button type="button" data-question="How can I support the artisan?">
+        How can I support the artisan?
+      </button>
+      <button type="button" data-question="Is online payment available?">
+        Is online payment available?
+      </button>
+    </div>
+  </details>
+</div>
+
+
+    <form class="mitra-form" id="mitra-form">
+      <input
+        type="text"
+        id="mitra-input"
+        placeholder="Ask a simple question..."
+        aria-label="Ask Dhokra Mitra a question"
+        maxlength="300"
+        required
+      />
+      <button type="submit" aria-label="Send message">➤</button>
+    </form>
+
+    <p class="mitra-disclaimer">
+      Prototype assistant · Answers are limited to common questions.
+    </p>
+  </section>
+
+ 
+<button
+  type="button"
+  class="mitra-launcher"
+  id="mitra-launcher"
+  aria-label="Open Dhokra Mitra assistant"
+  aria-expanded="false"
+  aria-controls="mitra-panel"
+>
+  <img src="images/mitra-robot.png" alt="" />
+</button>
+
+</div>
+  <script src="script.js"></script>
+
+</body>
+</html>
